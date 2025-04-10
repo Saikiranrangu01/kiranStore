@@ -5,6 +5,7 @@ import ExploreMenu from '../../components/ExpoloreMenu/ExploreMenu'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 import AppDownload from '../../components/AppDownload/AppDownload'
 import { Route } from 'react-router-dom'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
     const [category, setCategory] = useState("All");

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
+import github from '../../assets/github.png'
 
 const Footer = () => {
   return (
@@ -13,6 +14,7 @@ const Footer = () => {
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />
+                    <a href="https://github.com/Saikiranrangu01" target="_blank"><img src={github} alt="" /></a>
                     <a href = "https://www.linkedin.com/in/saikiran-rangu/" target="_blank"><img src={assets.linkedin_icon} alt="" /></a>
                 </div>
             </div>
@@ -32,6 +34,7 @@ const Footer = () => {
                 <ul>
                     <li>+91 7569092145</li>
                     <li>saikirangoudrangu8@gmail.com</li>
+                    
                 </ul>
                 <a href = ""></a>
                 

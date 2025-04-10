@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,} from 'react'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Cart from './pages/Cart/Cart'
@@ -9,6 +9,7 @@ import LoginPopUp from './components/LoginPopUp/LoginPopUp'
 import ExploreMenu from './components/ExpoloreMenu/ExploreMenu'
 import AppDownload from './components/AppDownload/AppDownload'
 import NoPage from './components/NoPage/NoPage'
+import Contact from './components/ContactUs/ContactUs'
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false)
@@ -22,10 +23,12 @@ const App = () => {
           <Route path='/' element={<Home/>} />
           <Route path = '/cart' element={<Cart/>}/>
           <Route path='/order' element = {<PlaceOrder/>}/>
-
           <Route path='/mobile-app' element = {<AppDownload/>}/>
-          <Route path='/contact-us' element = {<Footer/>}/>
-          <Route path="*" element={<NoPage/>} />
+
+          
+          <Route path='/menu' element = {<ExploreMenu/>}/>
+          <Route path='/contact-us' element = {<Contact/>}/>
+          <Route path="/*" element={<NoPage/>} />
 
           
         </Routes>
